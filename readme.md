@@ -10,7 +10,7 @@ The repository is organized into the following folders and files:
   
 - **data/**:
   - **raw/**: Stores the raw data files.
-  - **presentation_notebooks/**: Contains Jupyter notebooks related to data presentation.
+  - **presentation_notebooks/**: Contains output data for presentation.
   
 - **src/**:
   - **analysis.py**: Contains scripts for data analysis.
