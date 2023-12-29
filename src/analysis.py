@@ -103,3 +103,4 @@ if __name__ == "__main__":
     presentation_path = 'data/presentation'
     create_directory_if_not_exists(presentation_path)
     final_result.to_excel(f"{presentation_path}/results.xlsx")
+    print("You can See output in data/presentation")

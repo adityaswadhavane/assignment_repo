@@ -6,7 +6,7 @@ from plotly.subplots import make_subplots
 
 st.title('ABC-XYZ Analysis Assignment')
 
-data = pd.read_excel('../data/presentation/results.xlsx')
+data = pd.read_excel('/../data/presentation/results.xlsx')
 def fig1_pareto_chart(data):
     fig = make_subplots(specs=[[{"secondary_y": True}]])
     result = data.sort_values(by='total_price_sum',ascending=False)
