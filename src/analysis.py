@@ -2,12 +2,6 @@ import pandas as pd
 import numpy as np
 import os
 
-def create_sqlite_db():
-    ...
-
-def profilling_report():
-    ...
-
 
 def create_directory_if_not_exists(directory_path):
     """
@@ -88,6 +82,12 @@ def bucketing(data,conf):
         data[bucketed_col] = pd.cut(data[original_col], bins=bins_list, labels=labels_names)
     return data
 
+
+def create_sqlite_db():
+    ...
+
+def profilling_report():
+    ...
 
 
 if __name__ == "__main__":

@@ -43,11 +43,22 @@ def fig3(result):
     fig.update_yaxes(title_text="Total Inventory Sum")
     return fig
 
+def fig4_comparision(result):
+    fig = px.bar(result,x='product_code',y=['open_stock_sum','alocated_inventory_sum','damaged_inventory_sum'],barmode='group')
+    fig.update_layout(
+        title='Inventory Overview by Product Code',
+        xaxis_title='Product Code',
+        yaxis_title='Quantity'
+    )
+    return fig
+
+
 cols = st.empty()
 
 charts = {'Pareto Chart':fig1_pareto_chart(data),
 'Percentage Distribution of ABC category':fig2_distribution_abc_category(data),
-'Distribution of ABC Catrgory by inventory':fig3(data)}
+'Distribution of ABC Catrgory by inventory':fig3(data),
+'Comparison of Stocks': fig4_comparision(data)}
 with st.sidebar:
     st.markdown("## Here are Some Charts of Analysis")
     select_chart = st.selectbox("Select from drop-down",list(charts.keys()))
