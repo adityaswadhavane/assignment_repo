@@ -26,19 +26,24 @@ Follow the steps below to set up the application:
 
 1. **Clone the Repository**: 
    ```bash
-   git clone [repository_url]```
+   git clone https://github.com/adityaswadhavane/assignment_repo.git
 
 2. **Create a Virtual Environment**:
-    ```python -m venv myenv```
+    ```bash
+    python -m venv myenv
 
 3.  **Activate the Virtual Environment**:
-    ```\myenv\Scripts\activate```
+    ```bash
+    \myenv\Scripts\activate
 
 4. **Install Dependencies**:
-   ```pip install -r requirements.txt```
+   ```bash
+   pip install -r requirements.txt
 
 5. **Generating Analysis Output**:
-   ```python src/analysis.py```
+   ```bash
+   python src/analysis.py
 
 6. **Launching the Visualization App**:
-    ```streamlit run app/presentation.py```
+    ```bash
+    streamlit run app/presentation.py
